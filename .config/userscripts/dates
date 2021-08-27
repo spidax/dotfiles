@@ -28,4 +28,5 @@ echo "Differences between last update:"
 diff dates_old.txt dates.txt
 bat -p dates.txt | xsel -ib
 echo "Done, copied dates to clipboard"
-rm -rf sheet.csv links.txt
+rm -rf sheet.csv
+#links.txt

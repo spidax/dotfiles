@@ -1,27 +1,36 @@
-! ------------------------------------------------------------------------------
-! Project:    Nord XResources
-! Repository: https://github.com/arcticicestudio/nord-xresources
-! License:    MIT
-! ------------------------------------------------------------------------------
+! special
+*.foreground:   #bbbbbb
+*.background:   #171717
+*.cursorColor:  #bbbbbb
 
-*background: #1d1d1d
-*foreground: #c5c8c6
-*cursorColor: #D8DEE9
+! black
+*.color0:       #131313
+*.color8:       #3d3a3b
 
-*color0:  #1d1d1d
-*color1:  #CC342B
-*color2:  #198844
-*color3:  #FBA922
-*color4:  #3971ED
-*color5:  #A36AC7
-*color6:  #8abeb7
-*color7:  #c5c8c6
+! red
+*.color1:       #883c43
+*.color9:       #bb6767
 
-*color8:  #969896
-*color9:  #CC342B
-*color10:  #198844
-*color11:  #FBA922
-*color12:  #3971ED
-*color13:  #A36AC7
-*color14:  #8abeb7
-*color15:  #ffffff
+! green
+*.color2:       #899e3b
+*.color10:      #d2d074
+
+! yellow
+*.color3:       #deb14f
+*.color11:      #807b64
+
+! blue
+*.color4:       #6e6461
+*.color12:      #909798
+
+! magenta
+*.color5:       #753747
+*.color13:      #956c74
+
+! cyan
+*.color6:       #55776e
+*.color14:      #71bb94
+
+! white
+*.color7:       #bbbbbb
+*.color15:      #baba9e

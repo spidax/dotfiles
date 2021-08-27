@@ -50,21 +50,18 @@ XF86AudioMute
 # Music control
 XF86Calculator
   mpc toggle
-	#playerctl --player=spotify play-pause
 
 super + XF86Calculator
-  mpc prev
-	#playerctl --player=spotify previous
+  mpc prev && dunstify -u low --replace=67 "Now playing: $(mpc cur)"
 
 super + XF86AudioMute
-  mpc next
-	#playerctl --player=spotify next
+  mpc next && dunstify -u low --replace=67 "Now playing: $(mpc cur)"
 
 super + XF86AudioLowerVolume
-	playerctl --player=spotify volume 0.05 -
+ dunstify -u low --replace=68 "ncmcpp $(mpc vol -2 | grep volume | sed 's/%.*//')%"	
 
 super + XF86AudioRaiseVolume
-	playerctl --player=spotify volume 0.05 +
+ dunstify -u low --replace=68 "ncmcpp $(mpc vol +2 | grep volume | sed 's/%.*//')%"	
 
 
 ##---------- Bspwm ----------##

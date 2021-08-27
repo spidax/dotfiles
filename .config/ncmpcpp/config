@@ -5,44 +5,53 @@ ignore_diacritics = "yes"
 default_place_to_search_in = "database"
 
 ## Display Modes ##
-playlist_editor_display_mode = "columns"
+playlist_display_mode = "columns"
 search_engine_display_mode = "columns"
 browser_display_mode = "columns"
-playlist_display_mode = "columns"
 
 ## General Colors ##
 colors_enabled = "yes"
 main_window_color = "white"
-header_window_color = "cyan"
+header_window_color = "white"
 volume_color = "green"
 statusbar_color = "white"
 progressbar_color = "cyan"
 progressbar_elapsed_color = "white"
 
 ## Song List ##
-song_columns_list_format = "(30)[green]{t} (30)[magenta]{a} (10)[blue]{l} (30)[yellow]{b}"
+song_columns_list_format = "(30)[green]{a} (30)[white]{t} (37)[red]{b} (5)[blue]{l}"
+#song_columns_list_format = "(3f)[black]{n} (40)[default]{t|f} (25)[red]{a} (30)[blue]{b} (4f)[black]{l}"
+
 song_list_format = "{$7%a - $9}{$5%t$9}|{$5%f$9}$R{$6%b $9}{$3%l$9}"
+#song_list_format = "$1$9%l$1$9 $1¦$9 $2%a$9 $1¦$9 $5%b$9 $R$1$9%t$1$9 $1¦$9 $1%n$9"
+
+song_window_title_format = "{%a-%t}"
+
+
 
 ## Current Item ##
-current_item_prefix = "$(blue)$r"
+current_item_prefix = "$(white)$r"
 current_item_suffix = "$/r$(end)"
-current_item_inactive_column_prefix = "$(cyan)$r"
+current_item_inactive_column_prefix = "$(blue)$r"
 
 ## Alternative Interface ##
 user_interface = "alternative"
-alternative_header_first_line_format = "$0$aqqu$/a {$6%a$9 - }{$3%t$9}|{$3%f$9} $0$atqq$/a$9"
-alternative_header_second_line_format = "{{$4%b$9}{ [$8%y$9]}}|{$4%D$9}"
+#alternative_header_first_line_format = ""
+alternative_header_first_line_format = "$0$aqqu$/a {%a$7 - }{$0%t$0}|{$0%f$0} $0$atqq$/a$7"
+#alternative_header_second_line_format = "{{$4%b$9}{ [$8%y$9]}}|{$4%D$9}"
+alternative_header_second_line_format = ""
 
 ## Classic Interface ##
-song_status_format = " $6%a $7⟫⟫ $3%t $7⟫⟫ $4%b "
+#song_status_format = " $6%a $7⟫⟫ $3%t $7⟫⟫ $4%b "
+song_status_format = " $6%a $7⟫⟫"
 
 ## Visualizer ##
 visualizer_data_source= "localhost:5555"
 #visualizer_sync_interval = 30
 visualizer_output_name = "my_fifo"
-visualizer_type = "spectrum"
+visualizer_type = spectrum
 visualizer_in_stereo = "yes"
-visualizer_look = "◆▋"
+#visualizer_look = "◆▋"
 
 ## Navigation ##
 cyclic_scrolling = "yes"
@@ -68,13 +77,17 @@ statusbar_visibility = "yes"
 titles_visibility = "yes"
 
 ## Progress Bar ##
-progressbar_look =  "=>-"
+#progressbar_look = "─╼─"
+progressbar_look = "─⊙┄"
 
 ## Now Playing ##
-now_playing_prefix = "> "
+#now_playing_prefix = "> "
+now_playing_prefix = ". "
+
 centered_cursor = "yes"
 
 # Misc
 display_bitrate = "yes"
 enable_window_title = "yes"
 empty_tag_marker = ""
+mpd_crossfade_time = "5"
